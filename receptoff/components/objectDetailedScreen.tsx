@@ -18,7 +18,7 @@ const ObjectDetailsScreen: React.FC = () => {
       <View style={styles.content}>
         <Image source={{ uri: object.photo }} style={styles.image} />
         <Text style={styles.title}>Название:{object.product_name}</Text>
-        {/* <Text style={styles.info}>Цена: {object.price}</Text> */}
+        <Text style={styles.info}>Цена: {object.price}</Text>
         <Text style={styles.info}>Доп информация: {object.product_info}</Text>
         {/* Дополнительная информация о объекте */}
       </View>

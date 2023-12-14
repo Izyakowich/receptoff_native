@@ -27,7 +27,7 @@ type RootStackParamList = {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get<ObjectInt[]>('http://192.168.1.182:8000/');
+          const response = await axios.get<ObjectInt[]>('http://172.20.10.4:8000/');
           if (response.status === 200) {
             setObjects(response.data);
             setFilteredObjects(response.data);

@@ -17,10 +17,12 @@ interface ObjectCardProps {
 const ObjectCard: React.FC<ObjectCardProps> = ({ object, onDetailsPress }) => {
   return (
     <View style={styles.card}>
-      <Image source={{ uri: object.photo }} style={styles.image} />
+      <Image source={{ uri: object.photo}} style={styles.image} />
       <View style={styles.details}>
         <Text style={styles.title}>{object.product_name}</Text>
         <Text style={styles.info}>{object.product_info}</Text>
+        <Text style={styles.info}>{object.price}</Text>
+
         {/* <Text style={styles.price}>{object.price}</Text> */}
 
  
