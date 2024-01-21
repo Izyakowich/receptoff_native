@@ -7,8 +7,6 @@ import {  TouchableOpacity, Text } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 
-
-
 type RootStackParamList = {
     MainScreen: undefined;
     ObjectDetailsScreen: { object: ObjectInt };
